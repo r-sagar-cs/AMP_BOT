@@ -1,0 +1,647 @@
+version: "2.0"
+#----------python 3.7.9 ----------
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - weather
+  - city_name
+  - cancel_appointment
+  - sever_slow
+  - wrong_name
+  - reschedule
+  - remote_book_test
+  - booking_confirmation
+  - invoice
+  - questionnaire
+  - walk-in_appointments_available
+  - print_certificate
+  - find_certificate
+  - result
+  - travel_test
+  - book_test
+  - PCR_test
+  - test_type
+  - weekend_appointment
+  - result_duration
+  - cancel_within_24hrs
+  - steps_to_booking_to_recive_certificate
+  - PCR_test_positive
+  - child_need_test
+  - need_ID
+  - retesting
+  - emergency_appiontment
+  - emergency_result
+  - business_testing
+  - fit_to_fly
+  - children_free_mean
+  - business_testing_cost
+  - antibody_test_result
+  - retuen_from_UK
+  - mandatory_day_result
+  - admin_fee_upon_cancellation
+  - senior_citizen_disount
+  - student_discount
+  - test_valid_duration
+  - precaution
+  - book_test_else_behalf
+  - running_short_on_time
+  - without_certificate
+  - compensation
+  - complaint
+  - nearest_bus_stop
+  - pin_location
+  - missed_appointment
+  - I_am_at_X
+  - cannot_find_clinic
+  - disability_access
+  - find_nearest_clinic
+  - particular_clinic_phone_number
+  - not_working
+  - How_do_I_pay
+  - pay_cash
+  - will_not_take_my_payment
+  - haven’t_got_refund
+  - certificate_in_other_language
+  - passport_details
+  - need_PCR_instead_Antigen
+  - didn’t_get_certificate
+  - admin_fee
+  - inform_NHS_if_positive
+  - reliable_antigen_test
+  - admin_fee_antigen_test
+  - antigen_test_provider
+  - cheaper_test
+  - miss_test
+  - sooner_result_for_emergency_test
+  - emergency_test_expensive
+  - antigen_test_acceptable_for_travel
+  - wrong_certificate
+  - after_complete_antigen_test
+  - test_cost
+  - what_age_test_for_child
+  - refund_not_received
+  - info_for_booking
+  - requirement_for_appointment
+  - DM_health
+  - day_5_test
+  - day_2_8_testing
+  - make_appointment
+  - govt_approved
+  - contact_Oncologica
+  - nearest_train_station
+  - nearest_car_park
+  - wrong_DOB
+  - wrong_passport_num
+  - wrong_address
+  - wrong_email
+  - wrong_phone_number
+  - zone_of_depart_country
+  - customer_service_lines_open_hrs
+  - test_centres_in_Wales
+  - test_centres_in_Scotland
+  - book_test_for_today
+  - count_Isolation_days
+  - PCR_test_involve
+  - certificate_have_QR
+  - Day_2_test_before_day_5_test
+  - positive_PCR_test
+  - need_day_8_test_after_day5
+  - enquiries_about_Spanish_clinics
+  - enquiries_about_Mexican_clinics
+  - info_about_antibody_test
+  - any_clinic_in_Northwest_of_England
+  - any_clinic_in_North_of_England
+  - any_clinic_in_Midlands
+  - any_clinic_in_London
+  - any_clinic_in_Southeast_of_England
+  - any_clinic_in_Southwest_of_England
+  - any_clinic_in_East_of_England
+  - Fit_to_Fly_test_at_home
+  - Oncologica
+
+
+actions: 
+  - utter_cancel_appointment
+  - utter_sever_slow
+  - utter_wrong_name
+  - utter_reschedule
+  - utter_remote_book_test
+  - utter_booking_confirmation
+  - utter_invoice
+  - utter_questionnaire
+  - utter_walk-in_appointments_available
+  - utter_print_certificate
+  - utter_find_certificate
+  - utter_result
+  - utter_travel_test
+  - utter_book_test
+  - utter_PCR_test
+  - utter_test_type
+  - utter_weekend_appointment
+  - utter_result_duration
+  - utter_cancel_within_24hrs
+  - utter_steps_to_booking_to_recive_certificate
+  - utter_PCR_test_positive
+  - utter_child_need_test
+  - utter_need_ID
+  - utter_retesting
+  - utter_emergency_appiontment
+  - utter_emergency_result
+  - utter_business_testing
+  - utter_fit_to_fly
+  - utter_children_free_mean
+  - utter_business_testing_cost
+  - utter_antibody_test_result
+  - utter_retuen_from_UK
+  - utter_mandatory_day_result
+  - utter_admin_fee_upon_cancellation
+  - utter_senior_citizen_disount
+  - utter_student_discount
+  - utter_test_valid_duration
+  #----------
+  - utter_precaution
+  - utter_book_test_else_behalf
+  - utter_running_short_on_time
+  - utter_without_certificate
+  - utter_compensation
+  - utter_complaint
+  - utter_nearest_bus_stop
+  - utter_pin_location
+  - utter_missed_appointment
+  - utter_I_am_at_X
+  - utter_cannot_find_clinic
+  - utter_disability_access
+  - utter_find_nearest_clinic
+  - utter_particular_clinic_phone_number
+  - utter_not_working
+  - utter_How_do_I_pay
+  - utter_pay_cash
+  - utter_will_not_take_my_payment
+  - utter_haven’t_got_refund
+  - utter_certificate_in_other_language
+  - utter_passport_details
+  - utter_need_PCR_instead_Antigen
+  - utter_didn’t_get_certificate
+  - utter_admin_fee
+  - utter_inform_NHS_if_positive
+  - utter_reliable_antigen_test
+  - utter_admin_fee_antigen_test
+  - utter_antigen_test_provider
+  - utter_cheaper_test
+  - utter_miss_test
+  - utter_sooner_result_for_emergency_test
+  - utter_emergency_test_expensive
+  - utter_antigen_test_acceptable_for_travel
+  - utter_wrong_certificate
+  - utter_after_complete_antigen_test
+  - utter_test_cost
+  - utter_what_age_test_for_child
+  - utter_refund_not_received
+  - utter_info_for_booking
+  - utter_requirement_for_appointment
+  - utter_DM_health
+  - utter_day_5_test
+  - utter_day_2_8_testing
+  - utter_make_appointment
+  - utter_govt_approved
+  - utter_contact_Oncologica
+  - utter_nearest_train_station
+  - utter_nearest_car_park
+  - utter_wrong_DOB
+  - utter_wrong_passport_num
+  - utter_wrong_address
+  - utter_wrong_email
+  - utter_wrong_phone_number
+  - utter_zone_of_depart_country
+  - utter_customer_service_lines_open_hrs
+  - utter_test_centres_in_Wales
+  - utter_test_centres_in_Scotland
+  - utter_book_test_for_today
+  - utter_count_Isolation_days
+  - utter_PCR_test_involve
+  - utter_certificate_have_QR
+  - utter_Day_2_test_before_day_5_test
+  - utter_positive_PCR_test
+  - utter_need_day_8_test_after_day5
+  - utter_enquiries_about_Spanish_clinics
+  - utter_enquiries_about_Mexican_clinics
+  - utter_info_about_antibody_test
+  - utter_any_clinic_in_Northwest_of_England
+  - utter_any_clinic_in_North_of_England
+  - utter_any_clinic_in_Midlands
+  - utter_any_clinic_in_London
+  - utter_any_clinic_in_Southeast_of_England
+  - utter_any_clinic_in_Southwest_of_England
+  - utter_any_clinic_in_East_of_England
+  - utter_Fit_to_Fly_test_at_home
+  - utter_Oncologica
+  - action_weatherapi
+
+slots:
+  temp:
+    type: float
+
+entities: 
+  - place_name
+  - city 
+  
+
+responses:
+  utter_greet:
+  - text: "Hey! How may I assist you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_city:
+    - text: "which city you want to check for?"
+    
+  utter_temp:
+  - custom:
+      text: "Today's temperature is {temp} degree Celcius."
+      temp: "{temp}"
+
+  utter_cancel_appointment:
+  - text: "\n Refunds are issued in line with our cancellation policy, which is displayed at the bottom of the website homepage. Customers must agree to this cancellation policy when booking a test. Please understand that appointment times are limited and in high demand. When you book your appointment with us, you are holding a space on our calendar that is no longer available to our other customers. However, if you must cancel your appointment, we respectfully request at least 48 hours' notice in order to allow another customer access to that appointment time.
+          \n \t Cancellations — 48 hours or more in advance will receive a 100% refund minus an admin fee of £20
+          \n \t Cancellations – 24 hours in advance will receive a 50% refund minus an admin fee of £20
+          \n \t Cancellations made within 24 hours will not receive a refund \n
+          Alternatively, customers can choose to put their appointment on hold to be used at a later date. Please contact our Customer Service team to discuss your cancellation. "
+
+  utter_sever_slow:
+  - text: " We are currently experiencing a high influx of bookings. Please be patient with our server. If the problem persists, please try refreshing your browser or using a different device.  "
+
+  utter_wrong_name:
+  - text: " Please contact Customer Services by calling 03301742200 or emailing enquiries@dam-health.com. A Customer Service Assistant can easily amend your details on our system. "
+
+  utter_reschedule:
+  - text: " Tests can be rescheduled free of charge, as long as you let us know in advance. Please contact Customer Services by calling 03301742200. Alternatively, you can email enquiries@dam-health.com, giving details of your old appointment and the desired changes. A Customer Service Assistant can easily amend your appointment details on our system and send details of your new appointment. "
+
+  utter_remote_book_test:
+  - text: " We are unable to accept bookings over the phone or via email. All bookings must be made via our website, at www.dam-health.com"
+
+  utter_booking_confirmation:
+  - text: " Yes. If you require a confirmation of you booking please contact our Customer Service team by phone on 03301742200 or by sending an email to enquiries@dam-health.com. A Customer Service assistant can swiftly send a confirmation of the booking via email with details of your appointment. " 
+  
+  utter_invoice:
+  - text: " Yes. If you require a copy of your invoice please contact our Customer Service team by phone on 03301742200 or by sending an email to enquiries@dam-health.com. A Customer Service assistant can swiftly send your invoice via email. "
+
+  utter_questionnaire:
+  - text: " You will fill out a physical patient booking form at the clinic that will be used when generating certificate. Please also download Health Passport Worldwide to amend any changes that you would like on your certificate.\n \n The electronic patient booking form can also be amended by our Customer Service team. Please call 03301742200 if you would like to update or make changes to your form. "
+
+  utter_walk-in_appointments_available:
+  - text: " Walk-in appointments are not permitted. Customers must book their test in advance via our website at www.dam-health.com." 
+
+  utter_print_certificate:
+  - text: " No, we do not provide printed certificates. All certificates are sent via email as pdf documents, which customers are welcome to print off.
+        \n\n Alternatively, for more control over your results, please download Health Passport Worldwide app and you would be able to access your certificate immediately and with more ease."
+  utter_find_certificate:
+  - text: " We aim to send all results within 24 hours of the test appointment. If you have not received your results after 24 hours, please check your junk and spam folders on your email. If you are still unable to find your certificate, please contact our Customer Services team by phone on 03301742200 or by sending an email to enquiries@dam-health.com. A Customer Service assistant can check your results have been sent and even resend the certificate to an alternative email address."
+
+  utter_result:
+  - text: " We aim to send all results within 24 hours of the test appointment."
+
+  utter_travel_test:
+  - text: " Unfortunately, we cannot advise you on which test you need to take for liability reasons. I would advise getting in touch with the airline or travel provider to ensure you get the correct test for your destination."
+
+  utter_book_test:
+  - text: " We cannot advise on when you should book your appointment. Please check with the airline that you are flying with as well as the government guidelines of the country you are traveling to. Please leave at least 24 hours for the test results to come through."
+
+  utter_PCR_test:
+  - text: " A COVID-19 PCR test looks for the presence of genetic material from the COVID-19 virus within a swab or saliva sample. These tests are commonly referred to as polymerase chain reaction (PCR) tests. RT stands for reverse transcription."
+
+  utter_test_type:
+  - text: " The Lateral Flow Antigen Tests we provide are used for travel by various customers. For it to be eligible for your travel, you will need to check with your travel provider and the country you are visiting whether they will accept Lateral Flow Antigen Tests and that type of certificate to be able to board with – this can be investigated through identifying the standard of entry requirements for either the travel provider or the country you are travelling to.\n \n 
+            The Lateral Flow Antigen Tests are conducted in our DAM Health test centres by one of our health care professionals. The results are then emailed to you within 24 hours from the time of your appointment with your Fit to Fly Antigen certificate attached as a PDF document. \n \n
+            For further information on this type of test, you can follow this link that takes you to the description page on our website and be able to book an appointment from this same site also: Lateral Flow Antigen Test – DAM Health (dam-health.com)\n \n "
+
+  utter_weekend_appointment:
+  - text: "While most of our clinics are open seven days a week, opening hours may vary depending on the clinic. Please check the availability of the clinic when you are booking your test.  "
+  
+  utter_result_duration:
+  - text: "We aim to send all results within 24 hours of the test appointment, even on weekends."
+  
+  utter_cancel_within_24hrs:
+  - text: "Please understand that appointment times are limited and in high demand. When you book your appointment with us, you are holding a space on our calendar that is no longer available to our other customers. However, if you must cancel your appointment, we respectfully request at least 48 hours’ notice to allow another customer access to that appointment time."
+  
+  utter_steps_to_booking_to_recive_certificate:
+  - text: "Step 1 – Book your appointment online.\n\n
+          Step 2 – Arrive at the clinic for a tonsil swab.\n\n
+          Step 3 – Your sample will be taken and analysed in the laboratory.\n\n
+          Step 4 – You will receive your certificate via email in a PDF format within 24 hours of the test being taken.\n\n"
+  
+  utter_PCR_test_positive:
+  - text: "If a customer tests positive, they will receive an email from our Head Nurse, who will advise them to isolate in line with NHS guidance. \n\n
+          Public Health England will also be informed."
+
+  utter_child_need_test:
+  - text: "This will depend on the travel company’s policy and the requirements of the country you will be travelling to. Please check the government website for more information on international travel regulations. "
+  
+  utter_need_ID:
+  - text: "Yes, ID is required to ensure we are testing the correct person. It will confirm the person who turned up is the person on the booking."
+  
+  utter_retesting:
+  - text: "We do not have any inconclusive results. Your test will either be positive or negative."
+  
+  utter_emergency_appiontment:
+  - text: "This is an appointment that is booked on the same day as the test (not in advance). The price for an emergency PCR is £199 and for an emergency antigen is £39."
+  
+  utter_emergency_result:
+  - text: "We aim to send all results within 24 hours of the test appointment. If you have not received your results after 24 hours, please check your junk and spam folders on your email. If you are still unable to find your certificate, please contact our Customer Services team by phone on 03301742200 or by sending an email to enquiries@dam-health.com. A Customer Service assistant can check your results have been sent and even resend the certificate to an alternative email address. "
+  
+  utter_business_testing:
+  - text: "This is either a discounted service for frequent business travellers that we can book over the phone. Alternatively, this is when our Head Healthcare professional visits a business to provide their tests. Please contact sarah.sinnott@damgroupuk.com for more details."
+  
+  utter_fit_to_fly:
+  - text: "Fit-to-Fly certificates are proof that a government approved testing provider has deemed it safe for you to fly."
+  
+  utter_children_free_mean:
+  - text: "With a PCR Fit to Fly test, one child can have a free test per paying adult."
+  
+  utter_business_testing_cost:
+  - text: "These are full price but can be subject to approved discount on a case-by-case basis. Please contact sarah.sinnott@damgroupuk.com for more details."
+
+  utter_retuen_from_UK:
+  - text: "Customers must check the most up to date government advise about testing upon their return to the UK. Currently the requirements are as follows; returning from a Green list country is a Mandatory Day 2 test, an Amber country is mandatory Day 2 and Day 8 test with an optional Day 5 early release and a Red country must be provided by NHS."
+  
+  utter_antibody_test_result:
+  - text: "Unfortunately, we no longer provide Antibody testing."
+
+  utter_mandatory_day_result:
+  - text: "Our Day 2 and Day 8 testing is provided by our preferred partner Oncologica. Customers will have access to their results 24 hours after Oncologica have received the returned test."
+  
+  utter_admin_fee_upon_cancellation:
+  - text: "Our cancellation policy states that we charge a £20 admin fee with all cancellations. Please understand that this is taken due to the slot taken up by your booking that has been taken up where somebody else could have booked in."
+
+  utter_senior_citizen_disount:
+  - text: "We do not provide discount for senior citizens."
+
+  utter_student_discount:
+  - text: "We do not provide discount for students."
+
+  utter_test_valid_duration:
+  - text: "The results and certificate are valid for up to 72 hours. However, the requirements will vary depending on the country you are travelling to. We are unable to advise on which type of test you need to book or when to book for. Please check the requirements of the country you are visiting and book accordingly."
+  
+  utter_precaution:
+  - text: "Customers should discuss any medical concerns with a healthcare professional in advance of the appointment."
+
+  utter_book_test_else_behalf:
+  - text: "Anyone can book an appointment on behalf of another individual. Please ensure that all details provided in the patient booking form are accurate for the person being tested."
+
+  utter_running_short_on_time:
+  - text: "We aim to have our results sent out within 24 hours. We cannot guarantee results before this."
+
+  utter_without_certificate:
+  - text: "Please contact our Customer Service team on 03301742200."
+
+  utter_compensation:
+  - text: "Apologies for any inconvenience caused. Please contact our Customer Service team on 03301742200 to discuss the issue."
+
+  utter_complaint:
+  - text: "Apologies for any inconvenience caused. Please email our enquiries team at enquiries@dam-health.com with details of what has happened. This will be passed on to the relevant department."
+
+  utter_nearest_bus_stop:
+  - text: "Please see the Google maps window on the webpage of the relevant Test Centre to find the nearest bus stop."
+
+  utter_pin_location:
+  - text: "We cannot send a pin location to customers. Please visit our website, where you can find the address of the relevant clinic, along with a Google maps window to display the location."
+  utter_missed_appointment:
+  - text: "We are unable to provide a refund as you have arrived late the appointment and the test centre has closed for the day. This is therefore classed as a missed appointment."
+
+  utter_I_am_at_X:
+  - text: "Please visit our website, where you can find the address of the relevant clinic, along with a Google maps window to display the location."
+
+  utter_cannot_find_clinic:
+  - text: "Please contact our Customer Service team on 03301742200. They can inform the clinic that you are running late."
+
+  utter_disability_access:
+  - text: "Please contact our Customer Service team on 03301742200 to discuss the accessibility at specific clinics."
+
+  utter_find_nearest_clinic:
+  - text: "Please see our list of Test Centres on our website. Alternatively, please contact our Customer Service team on 03301742200 to find your nearest clinic."
+
+  utter_particular_clinic_phone_number:
+  - text: "We are unable to provide contact details for specific clinics. Please contact our Customer Service team on 03301742200 if there are any issues, and they can contact specific clinics on your behalf."
+
+  utter_not_working:
+  - text: "All bookings must be made via our website at www.dam-health.com 
+          \n \n Please try using a different browser or a different device. If the problem persists, please contact our Customer Service team on 03301742200."
+
+  utter_How_do_I_pay:
+  - text: " We are only able to accept card payments. Payments are made when booking the tests online via our website at www.dam-health.com"
+
+  utter_pay_cash:
+  - text: "We are unable to accept cash payments."
+
+  utter_will_not_take_my_payment:
+  - text: "Please ensure all your details are correct and all required fields are filled. If the problem persists, please try again on a different browser or contact our Customer Service team on 03301742200."
+
+  utter_haven’t_got_refund:
+  - text: "Refunds should be processed in 7 to 10 working days. If you are yet to receive a refund after 10 days, please send your name and details of your appointment to enquiries@dam-health.com, and a member of our Customer Service team will investigate the issue."
+
+  utter_certificate_in_other_language:
+  - text: "All our certificates are in English. We are unable to issue certificates in any other language."
+
+  utter_passport_details:
+  - text: "Your passport number will appear on your Fit to Fly certificate."
+
+  utter_need_PCR_instead_Antigen:
+  - text: "Please contact our Customer Service team on 03301742200. They will be able to change the test type and refund/charge the difference in price."
+
+  utter_didn’t_get_certificate:
+  - text: "We aim to send test results within 24 hours of your appointment. If you are yet to receive your results after 24 hours, please contact our Customer Service team on 03301742200."
+
+  utter_admin_fee:
+  - text: "Please understand that appointment times are limited and in high demand. When you book your appointment with us, you are holding a space on our calendar that is no longer available to our other customers. Therefore, an admin fee is deducted from the refund to compensate this."
+
+  utter_inform_NHS_if_positive:
+  - text: "Public Health England are informed of every positive case."
+
+  utter_reliable_antigen_test:
+  - text: "The type of Lateral Flow Antigen Test we provide is recognised as DAM Health Coronavirus SARS-CoV-2 Antigen (Colloidal Gold Method). It is MHRA and FDA registered, and CE marked. 
+          \n\n Our Lateral Flow Antigen Tests accuracy, sensitivity and specificity can be found below:
+          \n \n Sensitivity: 94.39%
+          \n \n Specificity: 100%
+          \n \n Accuracy: 97.47%
+          \n \n The manufacturer of our Lateral Flow Antigen Tests is titled Gruenbanka."
+
+  utter_admin_fee_antigen_test:
+  - text: "Our cancellation policy states that a £20 admin fee will be deducted from any refund issued. This includes Antigen appointment cancellations."
+
+  utter_antigen_test_provider:
+  - text: "Our Antigen tests are provided by Gruenbanka."
+
+  utter_cheaper_test:
+  - text: "The prices of our tests vary depending on the location of the clinics. This is due to a variety of factors including courier costs, clinic location and staff costs."
+
+  utter_miss_test:
+  - text: "If you do not attend your test without contacting us in advance, the appointment will be classed as a missed appointment, and you will not be able to claim any refund."
+
+  utter_sooner_result_for_emergency_test:
+  - text: "We aim to send test results within 24 hours of your appointment and are unable to guarantee results any sooner. An emergency test refers to the test being booked and carried out on the same day.
+          \n \n We aim to send all test results within 24 hours of your appointment and are unable to guarantee results any sooner."
+
+  utter_emergency_test_expensive:
+  - text: "An emergency test refers to the test being booked and carried out on the same day. Please understand that appointment times are limited and are in very high demand. Therefore, bookings made on the same day add pressure to the clinics and testing facilities."
+
+  utter_antigen_test_acceptable_for_travel:
+  - text: "Antigen tests are valid for travel, however this as at the discretion of the company/country you are travelling with, so ensure to check their websites for the latest information about whether these types of tests are acceptable to your destination."
+
+  utter_wrong_certificate:
+  - text: "We are happy to make any necessary modifications to your certificates, we will try and reply to these queries on this email as quickly as possible however you may get a faster response by contacting the certificates department directly at certificates@dam-health.com. In your query, please ensure you have included details of the mistake and the required corrections. Alternatively, you can speak to a member of our Customer Service team by calling 03301742200."
+
+  utter_after_complete_antigen_test:
+  - text: "Provided your test result is negative, you will receive a certificate which states your name, date of birth, address, passport number, test result and time/date of your test appointment. We aim to send certificates within 24 hours of the test being carried out."
+
+  utter_test_cost:
+  - text: "Below you can find a comprehensive list of our current pricing.
+          \n \n Our fit to fly PCR testing services start at £99.
+          \n \n Our Lateral Flow testing services start at £29. 
+          \n \n Our Mandatory Day 2 release testing services start at £69
+          \n \n Our Mandatory Day 2 and 8 package service start at £119
+          \n \n Our Day 5 early release testing services start at £99
+          \n \n However, these prices are subject to your testing location, Pricing for each clinic can be found at our website."
+
+  utter_what_age_test_for_child:
+  - text: "This is currently down to the policies of the travel provider you are using, so please do ensure you have checked their latest guidance. However, we can test children of all ages. As for our current one child goes free offer with a paying adult, this can be applied to any individual up-to and including the age of 17."
+
+  utter_refund_not_received:
+  - text: "Please allow 7-10 working days for the payment to be processed, if you still have not received reimbursement after this period, please contact customer service immediately by phone on 03301742200, or via email at enquiries@dam-health.com."
+
+  utter_info_for_booking:
+  - text: "When making your appointment we require your Full name, Date of Birth, Full address, Email address and Passport number. The same details are also required is you are also making a booking for a child. Please ensure all personal details match that stated on your passport.
+          \n\n Emergency Fit to fly and 5-day release appointments can be made online via the Emergency Same Day Test button found in the top right corner of our website."
+
+  utter_requirement_for_appointment:
+  - text: "Please bring your passport (or alternative form of ID) and a face mask to your appointment."
+
+  utter_DM_health:
+  - text: "Dam Health is one of the leading providers of coronavirus testing worldwide. We have been at the forefront of COVID-19 testing solutions during the pandemic. Our lab has processed over 92,000 tests and we have undertaken over 1,500 tests per day to help protect public health."
+
+  utter_day_5_test:
+  - text: "The Day 5 Test to Release is an optional scheme in which customers can reduce the self-isolation period from 10 days to 5 days if they test negative. You must have received your Day 2 negative result in order to qualify for and attend your appointment at our test centre. We aim to send the results within 24 hours of the appointment."
+
+  utter_day_2_8_testing:
+  - text: "In the current climate, various countries are rated in specific categories/zones of which are red, amber, or green listed. 
+          \n \n It is a mandatory government requirement and legal regulation to have your Day 2 and, if applicable, Day 8 Tests booked ahead of your arrival back into the U.K. The Day 2 and Day 8 tests are a service we provide with our partners Oncologica; these types of tests are postal self-sample test which are delivered to and posted from your quarantine address."
+
+  utter_make_appointment:
+  - text: "That’s great. You can make your appointment on our website."
+
+  utter_govt_approved:
+  - text: "We are currently in the process of becoming UKAS accredited. For most countries and airlines this makes our certificates valid for travel. Please be aware our certificates are not yet accepted by Hong Kong or Jersey."
+
+  utter_contact_Oncologica:
+  - text: "If you have any general enquiries about Day 2 and 8 testing, please contact our Customer Service team by calling 03301742200. If there are any issues with your Day 2 or Day 8 test kits, please email enquiries@dam-health.com with details of the problem, along with your name and unique OTP code."
+
+  utter_nearest_train_station:
+  - text: "Please see the Google maps window on the webpage of the relevant Test Centre to find the nearest train station."
+
+  utter_nearest_car_park:
+  - text: "Please see the Google maps window on the webpage of the relevant Test Centre to find the nearest car park."
+
+  utter_wrong_DOB:
+  - text: "Please contact Customer Services by calling 03301742200 or emailing enquiries@dam-health.com. A Customer Service Assistant can easily amend your details on our system."
+
+  utter_wrong_passport_num:
+  - text: "Please contact Customer Services by calling 03301742200 or emailing enquiries@dam-health.com. A Customer Service Assistant can easily amend your details on our system."
+
+  utter_wrong_address:
+  - text: "Please contact Customer Services by calling 03301742200 or emailing enquiries@dam-health.com. A Customer Service Assistant can easily amend your details on our system."
+
+  utter_wrong_email:
+  - text: "Please contact Customer Services by calling 03301742200 or emailing enquiries@dam-health.com. A Customer Service Assistant can easily amend your details on our system."
+
+  utter_wrong_phone_number:
+  - text: "Please contact Customer Services by calling 03301742200 or emailing enquiries@dam-health.com. A Customer Service Assistant can easily amend your details on our system."
+
+  utter_zone_of_depart_country:
+  - text: "You can check the zone (Green, Amber or Red) of your departure country on the government website via the following link; Red, amber and green list rules for entering England - GOV.UK (www.gov.uk)."
+
+  utter_customer_service_lines_open_hrs:
+  - text: "Our Customer Service lines are open Monday to Sunday, from 08:00 to 23:00. Please feel free to give us a call on 03301742200."
+
+  utter_test_centres_in_Wales:
+  - text: "We do not currently have any test centres open in Wales, although we are looking to expand to Wales in the near future."
+
+  utter_test_centres_in_Scotland:
+  - text: "We do not currently have any test centres open in Scotland, although we are looking to open clinics in Dundee, Edinburgh, and Glasgow in the near future."
+
+  utter_book_test_for_today:
+  - text: "Yes. If you would like to book a test for today, please follow the ‘Emergency Same Day PCR / Antigen’ link found in the top right-hand corner of our website; www.dam-health.com."
+
+  utter_count_Isolation_days:
+  - text: "The day you arrive in the UK is classed as Day 0 of your isolation. The next day is Day 1, and so on."
+
+  utter_PCR_test_involve:
+  - text: "Our PCR tests involve a tonsil swab, carried out by one of our trained clinicians."
+
+  utter_certificate_have_QR:
+  - text: "Yes. All our certificates will contain a QR code, confirming your travel fitness status."
+
+  utter_Day_2_test_before_day_5_test:
+  - text: "You are required to have a negative Day 2 test to be eligible for the Day 5 Test to Release scheme."
+
+  utter_positive_PCR_test:
+  - text: "Upon testing positive, you will be contacted by our Head Nurse and will be required to isolate for 10 days. Public Health England are informed of all positive cases."
+
+  utter_need_day_8_test_after_day5:
+  - text: "After receiving a negative Day 5 Test to Release result, you can end your isolation immediately. You are still required to take your Day 8 test."
+
+  utter_enquiries_about_Spanish_clinics:
+  - text: "If you are looking to book a test at one of our Spanish clinics, please visit Spain Home – DAM Health (dam-health.com). To get in touch with our Customer Service team in Spain, please call +34865660402, or email faq@dam-health.es."
+
+  utter_enquiries_about_Mexican_clinics:
+  - text: "If you are looking to book a test at one of our Mexican clinics, please visit Mexico – DAM Health (dam-health.com). To get in touch with our Customer Service team in Mexico, please call +525541647724, or email contacto.mexico@dam-health.com."
+
+  utter_info_about_antibody_test:
+  - text: "Antibody tests are used to detect antibodies to the COVID-19 virus to see if it is likely that you have previously been infected by the virus. An antibody test cannot test if you currently have the virus."
+
+  utter_any_clinic_in_Northwest_of_England:
+  - text: "We have several test centres available in the North West: Liverpool, Stretford (Manchester), St. Helens and Warrington. Please see a comprehensive list of test centres on our website, www.dam-health.com."
+
+  utter_any_clinic_in_North_of_England:
+  - text: "We have several test centres available in the North: Bradford, Liverpool, Newcastle, Stretford (Manchester), St. Helens and Warrington. Please see a comprehensive list of test centres on our website, www.dam-health.com."
+
+  utter_any_clinic_in_Midlands:
+  - text: "We have several test centres available in the Midlands: Birmingham, Harborne, Leicester, Nottingham, and Wolverhampton. Please see a comprehensive list of test centres on our website, www.dam-health.com."
+
+  utter_any_clinic_in_London:
+  - text: "We have several test centres available in London: Cannon St, Clapham, Croydon, Enfield, Fulham, Mayfair, Harrow, Kilburn, King’s Cross, Shoreditch and Victoria. Please see a comprehensive list of test centres on our website, www.dam-health.com."
+
+  utter_any_clinic_in_Southeast_of_England:
+  - text: "We have several test centres available in the South East: High Wycombe, New Malden (Surrey), Reigate (Surrey), Brentwood, Epping, Southend-on-Sea, and Reading, as well as several London clinics. Please see a comprehensive list of test centres on our website, www.dam-health.com."
+
+  utter_any_clinic_in_Southwest_of_England:
+  - text: "We do not currently have any test centres open in the South West of England. Please see a comprehensive list of test centres on our website, www.dam-health.com."
+
+  utter_any_clinic_in_East_of_England:
+  - text: "We have several test centres available in the East of England: Brentwood, Epping and Southend-on-Sea. Please see a comprehensive list of test centres on our website, www.dam-health.com."
+
+  utter_Fit_to_Fly_test_at_home:
+  - text: "All our Fit to Fly, Antigen and Test to Release tests are carried out by trained clinicians in our test centres. Please see a comprehensive list of test centres on our website, www.dam-health.com."
+
+  utter_Oncologica:
+  - text: "Oncologica are one of our partner companies, who carry out our Day 2 and Day 8 Travel Tests. They are government approved and gold standard coronavirus test providers. If you have any enquiries regarding Day 2 and Day 8 testing, please contact our Customer Service team on 03301742200, or email enquiries@dam-health.com."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
